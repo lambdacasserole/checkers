@@ -20,6 +20,11 @@ public class BsdChecksumCalculator {
         };
     }
 
+    /**
+     * Computes the checksum for the specified byte array and returns it as a 16-bit integer.
+     * @param data the byte array for which to compute the checksum
+     * @return  the checksum for the specified byte array as a 16-bit integer
+     */
     public short computeShort(byte[] data) {
         int checksum = 0;
         for (byte current : data) {
@@ -33,7 +38,7 @@ public class BsdChecksumCalculator {
     /**
      * Computes the checksum for the specified byte array.
      * @param data  the byte array for which to compute the checksum
-     * @return      the checksum for the specified byte array
+     * @return  the checksum for the specified byte array
      */
     public byte[] compute(byte[] data) {
         return shortToByteArray(computeShort(data));
