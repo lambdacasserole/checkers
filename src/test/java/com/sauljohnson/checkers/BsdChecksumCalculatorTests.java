@@ -20,14 +20,14 @@ public class BsdChecksumCalculatorTests extends TestCase {
         // Array of data strings.
         String[] dataStrings = new String[]
                 {
-                        "4e6651734b46703151374a7a5477444b",
-                        "6849325a637568725144556a4633716e",
-                        "4a72336d344646545a5a6c664f45346a",
-                        "51617175644139445045684272735270",
-                        "61516e5855537a4771756d506347534f",
-                        "6649337a3371766178334a4c39316a4a",
-                        "4d334653704475674e7230714436766d",
-                        "756a77467358335543567772695a5946"
+                        "4e6651734b46703151374a7a5477444b", // ASCII: NfQsKFp1Q7JzTwDK
+                        "6849325a637568725144556a4633716e", // ASCII: hI2ZcuhrQDUjF3qn
+                        "4a72336d344646545a5a6c664f45346a", // ASCII: Jr3m4FFTZZlfOE4j
+                        "51617175644139445045684272735270", // ASCII: QaqudA9DPEhBrsRp
+                        "61516e5855537a4771756d506347534f", // ASCII: aQnXUSzGqumPcGSO
+                        "6649337a3371766178334a4c39316a4a", // ASCII: fI3z3qvax3JL91jJ
+                        "4d334653704475674e7230714436766d", // ASCII: M3FSpDugNr0qD6vm
+                        "756a77467358335543567772695a5946"  // ASCII: ujwFsX3UCVwriZYF
                 };
 
         // Turn data strings into bytes.
