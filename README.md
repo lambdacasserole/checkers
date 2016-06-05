@@ -1,7 +1,7 @@
 # Checkers
 BSD checksum Maven package for Java.
 
-Checkers will compute a [16-bit BSD checksum](https://en.wikipedia.org/wiki/BSD_checksum) for a given byte array an return it as either a length-2 byte array or 16-bit integer (short). It *has not* been checked against the output from GNU `sum` but it has been checked against [another online implementation](http://codepen.io/ImagineProgramming/post/checksum-algorithms-in-javascript-checksum-js-engine) successfully.
+Checkers will compute a [16-bit BSD checksum](https://en.wikipedia.org/wiki/BSD_checksum) for a given byte array an return it as either a length-2 byte array or 16-bit integer (short). It *has not* been checked against the output from GNU `sum` but it has been checked against [Bas Groothedde's JavaScript implementation](http://codepen.io/ImagineProgramming/post/checksum-algorithms-in-javascript-checksum-js-engine) successfully.
 
 ## Installation
 You can pull this package into your Maven project straight from here using JitPack. Add JitPack as a repository first:
@@ -28,7 +28,7 @@ Then add a dependency on Checkers:
 ```
 
 ## Verification
-Again, Checkers *has not* been tested agains the official BSD-16 implementation for reasons of "I'm on Windows and I don't really wanna install VirtualBox or compile `sum.c` from source". Output is consistent with another online implmentation however. Here is test data for reference:
+Again, Checkers *has not* been tested agains the official BSD-16 implementation for reasons of "I'm on Windows and I don't really wanna install VirtualBox or compile `sum.c` from source". Output is consistent with [Bas Groothedde's JavaScript implementation](http://codepen.io/ImagineProgramming/post/checksum-algorithms-in-javascript-checksum-js-engine) however. Here is test data for reference:
 
 | Data (ASCII)       | Data (Hexadecimal)                 | Hash (Hexadecimal)   |
 |--------------------|------------------------------------|----------------------|
